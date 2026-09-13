@@ -1,0 +1,28 @@
+# requirements.txt
+# Install with: pip install -r requirements.txt
+#
+# Grouped by which phase of the project uses them, so you know what's
+# needed even if you only run part of the pipeline.
+
+# --- Phase 1: synthetic data generation ---
+numpy==1.26.4
+pandas==2.2.2
+
+# --- Phase 2 & 3: manual entry form + storage ---
+streamlit==1.37.1
+# sqlite3 is built into Python, no install needed
+
+# --- Phase 4: feature engineering ---
+scipy==1.13.1
+
+# --- Phase 5: model training ---
+scikit-learn==1.5.1
+joblib==1.4.2
+
+# --- Phase 6: prediction API ---
+fastapi==0.112.0
+uvicorn==0.30.5
+pydantic==2.8.2
+
+# --- Phase 7: dashboard charts ---
+plotly==5.23.0
